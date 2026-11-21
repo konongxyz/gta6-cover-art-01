@@ -1,4 +1,10 @@
-# Neon Coast Cover Studio
+# gta6-cover-art-01
+
+[![make.fun · gta6-cover-art-01](https://make.fun/badge/gta6-cover-art-01.svg)](https://make.fun/bounty/gta6-cover-art-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-cover-art-01)
+[![rank](https://make.fun/badge/gta6-cover-art-01/konongxyz/gta6-cover-art-01/rank.svg)](https://make.fun/bounty/gta6-cover-art-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-cover-art-01)
+[![reward](https://make.fun/badge/gta6-cover-art-01/konongxyz/gta6-cover-art-01/reward.svg)](https://make.fun/bounty/gta6-cover-art-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-cover-art-01)
+
+Neon Coast Cover Studio — a GTA 6 cover-art studio game built for the make.fun bounty.
 
 An offline web app that turns your photos and a caption into multi-panel
 sunset/neon poster cover art, exported as a PNG to share.
@@ -36,3 +42,7 @@ Referral: [![Neon Coast Cover Studio](https://make.fun/badge/9m688dgh)](https://
 
 MIT — see LICENSE. Fonts: Anton and Pacifico, SIL Open Font License 1.1
 (see `app/fonts/OFL.txt`).
+
+---
+
+Built for the [gta6-cover-art-01 bounty on make.fun](https://make.fun/bounty/gta6-cover-art-01?ref=9m688dgh).
