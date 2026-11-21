@@ -6,43 +6,54 @@
 
 Neon Coast Cover Studio — a GTA 6 cover-art studio game built for the make.fun bounty.
 
-An offline web app that turns your photos and a caption into multi-panel
-sunset/neon poster cover art, exported as a PNG to share.
+Turn any photo of yours into a multi-panel sunset-and-neon poster cover, right in the
+browser. Drop in up to four photos, arrange them across poster panels, grade the whole
+cover in one of five coastal colour looks, letter it with a block title and a script
+subtitle, and export a share-ready PNG in the common post sizes. Everything runs
+offline from the app's own files: your photos are read on your own machine and never
+leave it.
 
-- 6 panel layouts: Hero Split, Four Panel, Nine Panel, Tilted Snapshots,
-  Full Bleed, Strip Trio
-- 5 sunset/neon grades: Vice Sunset, Neon Night, Palm Gold, Teal Heat, Noir Pop
-- Block title lettering (Anton) + script subtitle (Pacifico), both under the
-  SIL Open Font License — vendored in `app/fonts/` with their OFL text
-- Badge ribbon, 5-star heat meter, grain, vignette, halftone title block,
-  poster frame
-- Crop and position every panel (zoom + pan, click a panel in the preview),
-  4 photo slots + 2 built-in samples
-- One-click PNG export in 1080 x 1080, 1080 x 1350 and 1920 x 1080
+## What it does
+
+- **Six panel layouts** — Hero Split, Four Panel, Nine Panel with the title on the
+  centre tile, Tilted Snapshots, Full Bleed and Strip Trio.
+- **Five colour grades** — Vice Sunset, Neon Night, Palm Gold, Teal Heat and Noir Pop,
+  applied to every panel so the cover reads as one poster.
+- **Per-panel framing** — click a panel in the live preview, then zoom and pan the
+  photo inside it; each panel can hold any of your four photo slots or a built-in
+  sample scene.
+- **Poster lettering and dressing** — a block title in Anton, a script subtitle in
+  Pacifico (both SIL Open Font License, vendored in `app/fonts/`), a badge ribbon,
+  a five-star heat meter, film grain, a vignette and a halftone title block.
+- **One-click PNG export** at 1080 × 1080, 1080 × 1350 and 1920 × 1080.
+- **Two built-in sample scenes** — sunset boulevard and neon alley, painted by the
+  app's own code, so the studio works before you add a photo of your own.
 
 ## Run it
 
+Serve the `app/` folder with any static file server and open `index.html` in a
+desktop browser — no build step, no network needed:
+
 ```sh
-node serve.ts
-# open http://localhost:8080
+node serve.ts        # then open http://localhost:8080
 ```
 
-Everything runs offline in the browser: photos are read on your own machine
-and never uploaded. No network request is made at runtime.
-
 ## Hand it in
+
+`main.ts` (Node 22, standard library only) copies `app/` and `screenshots/` to the
+output directory and writes `dossier.json` there with `buildDossier` from
+`vendor/makefun-app.ts`:
 
 ```sh
 mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 ```
 
-Referral: [![Neon Coast Cover Studio](https://make.fun/badge/9m688dgh)](https://make.fun/c/gta6-cover-art-01)
-
 ## License
 
-MIT — see LICENSE. Fonts: Anton and Pacifico, SIL Open Font License 1.1
-(see `app/fonts/OFL.txt`).
+MIT — see `LICENSE`. The lettering fonts are under the SIL Open Font License 1.1 —
+see `app/fonts/OFL.txt`.
 
 ---
 
-Built for the [gta6-cover-art-01 bounty on make.fun](https://make.fun/bounty/gta6-cover-art-01?ref=9m688dgh).
+Built for the make.fun bounty: https://make.fun/bounty/gta6-cover-art-01 — join in
+with the referral link https://make.fun/r/9m688dgh
